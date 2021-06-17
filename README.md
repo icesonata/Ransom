@@ -9,8 +9,8 @@ This application has been checked by VirusTotal:
 
 # Future study
 ## Key storage
-One of the most important factor to the ransomware is how it get and how it stores the key. This is a note for myself to future improvement for this project. \
-In this project, I created a launcher which will download and execute the ransomware. While encryption phase, the ransomware will also encrypted the launcher and itself if we set to MASS INFECTION mode (or manually modify the target directory/location). By that, in my opinion, victim can not reverse the program to get the encryption key. Alternatively, we could kill the ransomware by having it overwriting itself with random bytes. However, there are better ways to store ransomware's key. \   
+One of the most important factor to the ransomware is how it get and how it stores the key. This is a note for myself to future improvement for this project.
+In this project, I created a launcher which will download and execute the ransomware. While encryption phase, the ransomware will also encrypted the launcher and itself if we set to MASS INFECTION mode (or manually modify the target directory/location). By that, in my opinion, victim can not reverse the program to get the encryption key. Alternatively, we could kill the ransomware by having it overwriting itself with random bytes. However, there are better ways to store ransomware's key.
 After some discussion with my friends and peers, I come up with 2 ways to store ransomware's key more efficiently:
 - Using 2 different keys: 1 symmetric key for encryption + 1 asymmetric key (public key) to encrypt the symmetric key. The private key will be sent to user once they pay the ransom.
 - Ransomware won't initially have the key but retrieving it from the hacker server.
